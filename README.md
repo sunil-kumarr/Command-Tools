@@ -32,5 +32,5 @@ Sorting JSON by value with jq can easily be done by using the sort_by() function
 8. **Get Comparsion line based for a specific key in json:**
     * `cmp  <(jq .key2 <(jq -s -c 'sort_by(.key1) | .[]' file1.json)) <(jq .key2 <(jq -s -c 'sort_by(.key1) | .[]' file2.json))`
     
-9. **Creating new JSON from array of JSON: [{},{},{}] -> [{}]
-    * `js -s -c ' .[] | { newkey1: .key1 , newkey2: .key2}' filename.json 
+9. **Creating new JSON from array of JSON: [{},{},{}] -> [{}]**
+    * `js -s -c ' .[ ] | { newkey1: .key1 , newkey2: .key2}' filename.json`
