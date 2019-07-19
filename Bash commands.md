@@ -9,7 +9,7 @@
    * From Remote to local system
      ` scp -i login.pem   ~root@13.126.220.100:/fileOnRemoteSystem/myfile    ~/path/toSavefile/onLocal`
 3. **Linux command**
-   * `diff [options] file1 file2`
-      **  -i make case insensetive
-      **  -c context mode *** file1 --- file2
-      **  -u unified output
+   - `diff [options] file1 file2`
+      -  -i  : make case insensetive
+      -  -c : context mode *** file1 --- file2
+      -  -u : unified output
