@@ -1,6 +1,6 @@
 # Bash Commands :
 
-1. **ssh command** to establish remote connection to a server
+1. **SSH COMMAND** to establish remote connection to a server
    * `ssh -i ~/.ssh/login.pem root@13.126.220.100`
    - **SSH COMMAND LINE OPTIONS :** <br/>
        Some of the most important command-line options for the OpenSSH client are:
@@ -23,22 +23,14 @@
      - -i : identity_file A file from which the identity key (private key) for public key authentication is read.
      - -J : [user@]host[:port] Connect to the target host by first making a ssh connection to the
             pjump host[(/iam/jump-host) and then establishing a TCP forwarding to the ultimate destination from there.
-
--l login_name Specifies the user to log in as on the remote machine.
-
--p port Port to connect to on the remote host.
-
--q Quiet mode.
-
--V Display the version number.
-
--v Verbose mode.
-
--X Enables X11 forwarding.
-
-
-
-2. **scp command** to copy file from One System to Other:
+     - -l login_name Specifies the user to log in as on the remote machine.
+     - -p port Port to connect to on the remote host.
+     - -q Quiet mode.
+     - -V Display the version number.
+     - -v Verbose mode.
+     - -X Enables X11 forwarding.
+     
+2. **SCP COMMAND** to copy file from One System to Other:
    - From Local system to Remote System
      - ` scp -i login.pem ~/source-file root@13.126.220.100:destination-folder`
    - From Remote to local system
